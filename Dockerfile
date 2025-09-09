@@ -29,7 +29,7 @@ COPY --from=build /app/dist ./dist
 RUN npm install -g http-server
 
 # Expose port
-EXPOSE 3000
+EXPOSE 8080
 
 # Start the server
-CMD ["http-server", "dist", "-p", "3000", "-c-1"]
+CMD ["http-server", "dist", "-p", "8080", "-c-1"]
